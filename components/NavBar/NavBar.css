@@ -1,5 +1,5 @@
 .nav-bar {
-  width: 100%;
+  width: 100vw;
   position: fixed;
   height: 6em;
   top: 0;
@@ -14,4 +14,4 @@
   .nav-bar {
     padding: 1em;
   }
-}
+} 
