@@ -97,6 +97,7 @@ export const Resume = () => {
   ulDiv.appendChild(ulExp);
 
   const contactDiv = document.createElement("div");
+  contactDiv.classList.add("contact-newdiv");
   const headerContact = document.createElement("h4");
   headerContact.textContent = "CONTACT";
   headerContact.classList.add("headers");
