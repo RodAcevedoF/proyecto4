@@ -1,4 +1,4 @@
-import "./Navbar.css";
+import "./NavBar.css";
 import { HomeBtn } from "../HomeBtn/HomeBtn";
 import { AboutBtn } from "../AboutBtn/AboutBtn";
 
