@@ -1,0 +1,96 @@
+.brand-grid {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-auto-rows: 350px;
+  justify-content: center;
+  align-items: center;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 2em;
+  padding: 1em 3em;
+  background-color: inherit;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.brand-grid li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s ease-in-out, filter 0.3s ease-in-out;
+}
+
+.brand-grid li:first-of-type {
+  background-color: var(--letter-general);
+}
+
+.brand-grid li.dark {
+  background-color: var(--box-general);
+}
+
+.brand-grid li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  z-index: 0;
+}
+
+.grid-link img {
+  width: 12em;
+  height: auto;
+  object-fit: contain;
+  z-index: 1;
+  transition: width 0.3s ease-in-out, opacity 0.3s ease-in-out;
+  filter: invert(1);
+}
+
+.brand-grid li:nth-child(2) img {
+  filter: invert(0);
+  width: 14em;
+}
+
+.brand-grid li:nth-child(3) img {
+  filter: invert(0);
+  width: 12em;
+}
+
+.brand-grid li:nth-child(4) img {
+  width: 15em;
+}
+
+.brand-grid li:hover img {
+  width: 16em;
+  opacity: 0.8;
+}
+
+.brand-grid li:hover::before {
+  opacity: 1;
+}
+
+.grid-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  z-index: 2;
+}
+
+@media (max-width: 768px) {
+  .brand-grid {
+    grid-auto-rows: 300px;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    padding: 1em;
+  }
+}

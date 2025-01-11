@@ -1,0 +1,68 @@
+#about-btn {
+  display: flex;
+  width: auto;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  padding-left: 0.5em;
+  border: none;
+  background-color: inherit;
+  position: relative;
+  transition: transform 0.3s ease-in-out;
+}
+
+#about-btn.clicked {
+  transform: translateY(0.75em);
+}
+
+#about-btn span:first-of-type {
+  font-weight: bold;
+  font-size: 1.5em;
+  letter-spacing: 0.5em;
+  font-family: "Tungsten Medium";
+  transition: opacity 0.2s ease-in-out;
+}
+
+#about-btn span:first-of-type.hidden {
+  opacity: 0;
+}
+
+#about-btn span:last-of-type {
+  background-color: var(--underline);
+  height: 0.3em;
+  width: 6.5em;
+  top: 50%;
+  left: 0;
+  transform: translateX(30%);
+  opacity: 0;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  border-radius: 0.5em;
+}
+
+#about-btn span:last-of-type.portfolio {
+  width: 10em;
+}
+
+#about-btn:hover span:last-of-type {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+#about-btn span:first-of-type.dark {
+  color: var(--back-general);
+}
+
+@media (max-width: 430px) {
+  #about-btn span:first-of-type {
+    font-size: 1.3em;
+  }
+
+  #about-btn span:last-of-type {
+    width: 6em;
+  }
+
+  #about-btn span:last-of-type.portfolio {
+    width: 9em;
+  }
+}

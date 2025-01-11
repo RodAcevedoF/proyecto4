@@ -1,0 +1,191 @@
+.resume {
+  display: flex;
+  width: 100%;
+  padding: 1em 3em 5em 3em;
+  gap: 5em;
+  font-family: "Lilita One";
+  flex-flow: row wrap;
+}
+
+.bio-div {
+  width: 50%;
+  font-family: inherit;
+}
+
+.bio {
+  width: 100%;
+  font-family: inherit;
+  font-size: 1.5em;
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.download-btn {
+  margin-top: 5em;
+  display: flex;
+  width: auto;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: inherit;
+  transition: transform 0.3s ease-in-out;
+  color: inherit;
+}
+
+.download-btn span:first-of-type {
+  font-weight: bold;
+  font-size: 1.2em;
+  letter-spacing: 0.5em;
+  font-family: "Tungsten Medium";
+  transition: opacity 0.2s ease-in-out;
+}
+
+.download-btn span:last-of-type {
+  background-color: var(--underline);
+  height: 0.3em;
+  width: 16em;
+  left: 10;
+  transform: translateX(30%);
+  opacity: 0;
+  position: absolute;
+  transition: all 0.2s ease-in-out;
+  border-radius: 0.5em;
+}
+
+.download-btn:hover span:last-of-type {
+  opacity: 1;
+  transform: translateX(-2%);
+}
+
+.ed-exp {
+  display: flex;
+  width: 40%;
+  min-width: 25%;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.ed-exp ul {
+  width: 100%;
+}
+
+.ed-exp li {
+  padding: 1em 0;
+}
+
+.headers {
+  font-family: "Tungsten Medium";
+  font-size: 1.2em;
+  font-weight: 400;
+  letter-spacing: 0.5em;
+}
+
+.ed-exp p {
+  font-family: "Lilita One";
+  font-size: 1.2em;
+  white-space: pre-line
+}
+
+.contact-resume {
+  display: flex;
+  width: 100%;
+  gap: 1em;
+  padding: 1em;
+  flex-wrap: wrap;
+}
+
+.contact-resume a {
+  font-size: 1.5em;
+}
+
+.mail-div {
+  padding: 0 1em;
+}
+
+.mail-div a {
+  font-size: 1.2em;
+}
+
+.mail-div a span {
+  width: 2.8em;
+}
+
+.tooltip {
+  position: absolute;
+  width: 20em;
+  background: var(--box-general);
+  color: var(--back-general);
+  padding: 1em;
+  border-radius: 1em;
+  font-size: 0.9em;
+  display: none;
+  opacity: 0;
+  transform: translateY(-5em);
+  transition: all 0.3s ease-in-out;
+  z-index: 5;
+  font-family: inherit;
+}
+
+.tooltip ul li {
+  font-family: "Lilita One";
+  padding: 0;
+}
+
+.tooltip p {
+  font-family: "Lilita One";
+  font-size: 1em;
+}
+
+.tooltip h5 {
+  font-family: "Tungsten Medium";
+  font-size: 1.2em;
+  letter-spacing: 0.25em;
+  padding-bottom: 0.25em;
+}
+
+.education-item,
+.experience-item {
+  position: relative;
+  margin-bottom: 1em;
+}
+
+.tooltip.visible {
+  display: block;
+  opacity: 1;
+  transform: translateY(0.5em);
+}
+
+.education-list,
+.experience-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+@media (max-width: 900px) {
+  .bio-div {
+    width: 100%;
+  }
+
+  .ed-exp {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .resume {
+    padding: 1em;
+  }
+
+  .bio {
+    font-size: 1em;
+  }
+
+  .ed-exp {
+    font-size: 1em;
+  }
+
+  .tooltip {
+    width: 15em;
+  }
+}

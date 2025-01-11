@@ -1,0 +1,79 @@
+.video-container h2 {
+  position: absolute;
+  top: -5%;
+  left: 10%;
+  -webkit-text-stroke: 3px var(--back-general);
+  color: transparent;
+  font-size: clamp(4rem, 8vw, 8em);
+  font-weight: bolder;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.video-container p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: clamp(3rem, 6vw, 6rem);
+  font-weight: bolder;
+  text-align: center;
+}
+
+.video-container a {
+  position: absolute;
+  bottom: -5%;
+  right: 10%;
+  display: flex;
+  text-decoration: none;
+  align-items: center;
+  color: var(--back-general);
+  font-family: "Tungsten Medium";
+  font-size: clamp(1.5rem, 3vw, 3rem);
+  letter-spacing: 0.5em;
+  font-weight: bolder;
+  z-index: 5;
+  transition: all 0.5s ease-in-out;
+}
+
+.video-container a img {
+  width: clamp(5em, 8vw, 8em);
+  filter: invert(1);
+}
+
+.video-container a:hover {
+  -webkit-text-stroke: 0.5px var(--back-general);
+  color: transparent;
+}
+
+.loop-video {
+  width: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .video-container {
+    padding: 2em;
+  }
+
+  .video-container h2 {
+    font-size: clamp(2rem, 5.5vw, 5em);
+    left: 6%;
+    top: 5%;
+  }
+
+  .video-container p {
+    font-size: clamp(1.5rem, 5vw, 4rem);
+  }
+
+  .video-container a {
+    font-size: clamp(1.1rem, 4vw, 1.5rem);
+    right: 7%;
+    bottom: 10%;
+  }
+
+  .video-container a img {
+    width: clamp(3em, 5vw, 5em);
+  }
+}

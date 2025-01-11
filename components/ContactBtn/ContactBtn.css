@@ -1,0 +1,54 @@
+.smedia-btn {
+  text-decoration: none;
+  font-size: 2.5em;
+  color: var(--back-general);
+  font-family: "Tungsten Medium";
+  font-weight: bold;
+  transition: all 0.25s ease-in-out;
+}
+
+.smedia-btn:nth-child(1):hover {
+  color: #af0c00;
+}
+
+.smedia-btn:nth-child(1) span {
+  color: #af0c00;
+}
+
+.smedia-btn:nth-child(2):hover {
+  color: rgb(0, 51, 255);
+}
+
+.smedia-btn:nth-child(2) span {
+  color: rgb(0, 51, 255);
+}
+
+.smedia-btn:nth-child(3):hover {
+  color: rgb(255, 109, 214);
+}
+
+.smedia-btn:nth-child(3) span {
+  color: rgb(255, 109, 214);
+}
+
+.smedia-btn:nth-child(4):hover {
+  color: #42941e;
+}
+
+.smedia-btn:nth-child(4) span {
+  color: #42941e;
+}
+
+.smedia-btn:nth-child(5):hover {
+  color: #5a409d;
+}
+
+.smedia-btn:nth-child(5) span {
+  color: #5a409d;
+}
+
+@media (max-width: 430px) {
+  .smedia-btn {
+    font-size: 2em;
+  }
+}

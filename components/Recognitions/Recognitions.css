@@ -1,0 +1,71 @@
+.recogn-article {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 3em 2em 0 2em;
+}
+
+.recogn-article h3 {
+    font-size: 6em;
+    -webkit-text-stroke-width: 0.2px;
+    -webkit-text-stroke-color: var(--back-general);
+    color: var(--letter-general);
+    line-height: 1.5;
+}
+
+.recogn-div {
+    width: 100%;
+    display: flex;
+}
+
+.recogn-div ul {
+    width: 100%;
+}
+
+.recogn-div li {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    border-bottom: 3px solid var(--box-general);
+    padding: .5em 0;
+    align-items: center;
+}
+
+.recogn-div li p {
+    font-family: "Lilita One";
+}
+
+.recogn-div li p:first-of-type {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    padding-right: 0.5em;
+    width: 40%;
+}
+
+.recogn-div li p:nth-child(2) {
+    font-family: "Tungsten Medium";
+    font-size: 1.5em;
+    width: 30%;
+}
+
+.recogn-div p:nth-child(3) {
+    font-family: "Tungsten Medium";
+    font-size: 1.5em;
+    width: 10%;
+}
+
+@media (max-width: 768px) {
+   .recogn-article h3 {
+    font-size: 12.5vw;
+   } 
+}
+
+@media (max-width: 430px) {
+    .recogn-article {
+        padding: 3em 1em 0 1em;
+    }
+
+    .recogn-div li p:nth-child(3) {
+        font-size: 1em;
+    }
+}

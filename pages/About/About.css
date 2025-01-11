@@ -1,0 +1,103 @@
+.about {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  background-color: var(--back-general);
+  margin-top: 10em;
+  background-color: inherit;
+}
+
+.about-div {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: flex-start;
+  margin-bottom: 4em;
+  padding: 0 1em;
+}
+
+.about-div .lines-container {
+  align-self: center;
+  margin-top: 0;
+}
+
+.in-div {
+  display: flex;
+  width: 60%;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 0;
+  height: 100%;
+  margin-left: 2em;
+  margin-bottom: 5em;
+}
+
+.in-div h1 {
+  text-align: start;
+  font-size: 5em;
+  z-index: 3;
+  -webkit-text-stroke-width: 0.1px;
+  -webkit-text-stroke-color: var(--back-general);
+  font-weight: bolder;
+}
+
+.portrait {
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 90%
+  );
+  -webkit-mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 50%,
+    rgba(0, 0, 0, 0) 90%
+  );
+  transition: all 0.25s ease;
+  z-index: 0;
+  width: 550px;
+  position: absolute;
+  top: -4em;
+  right: 2em;
+}
+
+.portrait.filter {
+  filter: invert(1);
+  opacity: 0.5;
+}
+
+@media (max-width: 768px) {
+  .about-div {
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .in-div {
+    padding: 0;
+    width: 100%;
+    margin: 20em 0 0 0;
+  }
+
+  .in-div h1 {
+    font-size: 3.5em;
+    width: 100%;
+  }
+
+  .portrait {
+    right: 0;
+  }
+}
+
+@media (max-width: 430px) {
+  .in-div {
+    margin-top: 14em;
+  }
+
+  .in-div h1 {
+    font-size: 2.5em;
+  }
+  .portrait {
+    width: 380px;
+  }
+}

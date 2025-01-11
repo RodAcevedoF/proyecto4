@@ -1,0 +1,63 @@
+footer {
+  display: flex;
+  flex-direction: column;
+  padding: 2em 4em;
+}
+
+footer article:first-of-type {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: auto;
+  padding: 5em 0;
+  flex-wrap: row wrap;
+}
+
+footer article:first-of-type h3 {
+  font-size: 2em;
+  font-family: "Tungsten Medium";
+  letter-spacing: 0.5em;
+  padding: 0.5em;
+}
+
+.contact-div {
+  display: flex;
+  width: 80%;
+  gap: 2em;
+  padding: 0 1.5em;
+  flex-wrap: wrap;
+}
+
+.mail-article {
+  display: flex;
+  padding: 3em 1em;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  gap: 3em;
+}
+
+.mail-article div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.mail-article div h3 {
+  font-size: 2em;
+}
+
+@media (max-width: 430px) {
+  .mail-article div h3 {
+    font-size: 1em;
+  }
+
+  footer article:first-of-type {
+    padding: 2em 0;
+  }
+
+  footer article:first-of-type h3 {
+    font-size: 1.2em;
+    padding-bottom: 1em;
+  }
+}

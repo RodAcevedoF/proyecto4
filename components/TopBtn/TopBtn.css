@@ -1,0 +1,14 @@
+.top-btn {
+  border: none;
+  color: var(--underline-light);
+  background-color: inherit;
+  cursor: url("/icons/up-arrow.png"), pointer;
+  font-family: "Tungsten Medium";
+  font-size: 1.8em;
+  transition: all 0.25s ease;
+}
+
+.top-btn:hover {
+  font-weight: bolder;
+  filter: brightness(1.8);
+}

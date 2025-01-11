@@ -1,0 +1,63 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+  font-family: "Sequel Regular";
+}
+
+:root {
+  --back-general: whitesmoke;
+  --back-alternative: #582ea1;
+  --back-alternative-scroll: #2f115c;
+  --letter-general: black;
+  --letter-general-trans: rgba(0, 0, 0, 0.489);
+  --box-general: rgb(39, 39, 39);
+  --underline: rgba(78, 78, 78, 0.771);
+  --underline-light: rgba(127, 127, 127, 0.573);
+  --hover-bg-color: #ff0000;
+}
+
+@font-face {
+  font-family: "Tungsten Medium";
+  src: url("/fonts/tungsten_font/tungsten-medium.woff2") format("woff2"),
+    url("/fonts/tungsten_font/tungsten-medium.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Sequel Regular";
+  src: url("/fonts/sequel_regular/Sequel-Regular.woff2") format("woff2"),
+    url("/fonts/sequel_regular/Sequel-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lilita One";
+  src: url("/fonts/LilitaOne/LilitaOne.woff2") format("woff2"),
+    url("/fonts/LilitaOne/LilitaOne.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+body {
+  background-color: var(--back-general);
+  color: var(--letter-general);
+  transition: all 0.3s ease-in-out;
+}
+
+body.scrolled {
+  background-color: var(--letter-general);
+  color: var(--back-general);
+}
+
+body.custom-bg {
+  background-color: var(--back-alternative);
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}

@@ -1,0 +1,31 @@
+.mail-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  text-decoration: none;
+  font-size: 3em;
+  color: var(--back-general);
+  font-weight: bolder;
+}
+
+.mail-btn span {
+  background-color: var(--underline);
+  height: 0.2em;
+  width: 5.5em;
+  bottom: 0.3em;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  border-radius: 0.5em;
+}
+
+.mail-btn:hover span {
+  height: 0.25em;
+  filter: brightness(2);
+}
+
+@media (max-width: 430px) {
+  .mail-btn {
+    font-size: 1.8em;
+  }
+}
