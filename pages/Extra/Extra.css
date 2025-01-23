@@ -5,8 +5,13 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 1em 0 3em 0;
+    margin-bottom: 3em;
+    padding-bottom: 5em;
     justify-self: center;
+}
+
+body.extra-back {
+    background-color: #FFD600;
 }
 .extra h1 {
     padding: 0.5em;
@@ -27,7 +32,7 @@
 
 .extra button {
     position: relative;
-    bottom: 2em;
+    bottom: .5em;
     border: none;
     cursor: pointer;
     color: var(--back-general);

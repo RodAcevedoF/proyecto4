@@ -31,6 +31,7 @@ export const Home = () => {
   easterEgg.rel = "";
 
   easterEgg.addEventListener("click", () => {
+    document.body.classList.add("extra-back");
     changePage(Extra);
   });
 };

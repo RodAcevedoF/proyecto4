@@ -33,6 +33,7 @@ export const AboutBtn = (txt) => {
         spanLine.classList.add("portfolio");
         container.classList.remove("about-button");
         container.classList.add("home-button");
+        document.body.classList.remove("extra-back")
         changePage(About);
       }
 
