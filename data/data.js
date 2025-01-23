@@ -61,7 +61,7 @@ export const data = {
         "At the beginning of my journey as a freelance web developer, I focused on backend development, collaborating on open-source projects. This experience has been invaluable, allowing me to learn and grow while contributing to the development of community solutions."
     },
     {
-      position: "Associate Investigator",
+      position: "Associate researcher",
       company: "Freiburg Universität",
       startDate: "2014",
       endDate: "Present",
