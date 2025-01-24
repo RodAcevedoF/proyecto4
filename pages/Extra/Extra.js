@@ -14,9 +14,9 @@ export const Extra = () => {
     
     const btn = main.querySelector("button")
     btn.addEventListener("click", () => {
+        document.body.classList.remove("extra-back")
         changePage(Home);
     });
-    
-    }
+}
 
     

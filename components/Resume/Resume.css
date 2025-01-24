@@ -101,15 +101,21 @@
 
 .mail-div {
   padding: 0 1em;
+  display: flex;
+  flex-direction: column;
 }
 
-.mail-div a {
+.mail-div button:nth-child(1) {
   font-size: 1.2em;
 }
 
-.mail-div a span {
-  width: 2.8em;
+.mail-div .close-span:first-of-type {
+  top: 0.77em
 }
+
+.mail-div .close-span:last-of-type {
+  bottom: 0.77em
+} 
 
 .tooltip {
   position: absolute;

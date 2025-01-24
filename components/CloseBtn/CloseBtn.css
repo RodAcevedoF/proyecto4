@@ -1,0 +1,57 @@
+.outer {
+  width: 3em;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  background-color: inherit;
+  margin: auto;
+  flex-direction: column;
+}
+
+.inner-p {
+  font-size: 1em;
+  color: var(--back-general);
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-family: "Lilita One";
+}
+.close-span {
+  position: relative;
+  content: "";
+  height: 0.25em;
+  width: 100%; 
+  background: rgb(52, 124, 226);
+  left: 0;
+  transition: all 0.3s ease-in;
+  text-align: center;
+}
+
+.outer span:first-of-type {
+  top: 0.68em;
+  transform: rotate(45deg);
+}
+
+.outer span:last-of-type {
+  bottom: 0.68em;
+  transform: rotate(-45deg);
+}
+
+.outer:hover .inner-p {
+  opacity: 1;
+}
+
+.outer:hover span:first-of-type,
+.outer:hover span:last-of-type {
+  transform: rotate(0);
+}
+
+.outer:hover span:first-of-type {
+  top: 0;
+}
+
+.outer:hover span:last-of-type {
+  bottom: 0;
+}

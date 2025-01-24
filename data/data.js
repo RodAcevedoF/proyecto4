@@ -61,7 +61,7 @@ export const data = {
         "At the beginning of my journey as a freelance web developer, I focused on backend development, collaborating on open-source projects. This experience has been invaluable, allowing me to learn and grow while contributing to the development of community solutions."
     },
     {
-      position: "Associate researcher",
+      position: "Associate Researcher",
       company: "Freiburg Universität",
       startDate: "2014",
       endDate: "Present",
@@ -69,7 +69,7 @@ export const data = {
         "As a key member of the research team, I have contributed to various projects, from designing and conducting experiments to analyzing complex datasets and optimizing research methodologies."
     },
     {
-      position: "Orchestra member",
+      position: "Orchestra Member",
       company: "Reutlingen Symphonieorchester",
       startDate: "2008",
       endDate: "2014",
