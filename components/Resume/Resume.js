@@ -113,7 +113,7 @@ export const Resume = () => {
 
   const mailDiv = document.createElement("div");
   mailDiv.classList.add("mail-div");
-  mailDiv.innerHTML = `${MailBtn("raacevedof@gmail.com", "EMAIL")}`;
+  mailDiv.appendChild(MailBtn("EMAIL"));
   contactDiv.appendChild(mailDiv);
 
   ulDiv.appendChild(contactDiv);

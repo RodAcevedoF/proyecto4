@@ -17,7 +17,6 @@ export const Extra = () => {
         document.body.classList.remove("extra-back")
         changePage(Home);
     });
-    
-    }
+}
 
     

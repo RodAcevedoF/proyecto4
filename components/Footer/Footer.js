@@ -16,11 +16,13 @@ export const Footer = () => {
                         </article>
                         <article class="mail-article">
                           <div>
-                            <h3>Want to move forward?</h3>
-                            ${MailBtn("raacevedof@gmail.com", "DROP A LINE")}
+                            <h3>Want to move forward?</h3> 
                           </div>
                         </article>`;
 
+
+  const mailArticleDiv = document.querySelector(".mail-article div");
+  mailArticleDiv.appendChild(MailBtn("DROP A LINE"));
   const container = document.querySelector(".mail-article");
   container.appendChild(TopBtn());
 };
